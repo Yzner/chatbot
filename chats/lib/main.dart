@@ -136,20 +136,16 @@
 // }
 
 import 'package:flutter/material.dart';
-import 'chat.dart';
+import 'screens/chat_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ChatApp());
 }
 
-class MyApp extends StatelessWidget {
+class ChatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Chatbot',
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-      ),
       home: ChatScreen(),
     );
   }
